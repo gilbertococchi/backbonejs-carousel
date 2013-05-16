@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+		<title>BackBone.js Carousel Demo</title>
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/underscore.js"></script>
+        <script type="text/javascript" src="js/backbone.js"></script>
+        <script type="text/javascript" src="js/carousel.js"></script>
+
+	</head>
+	<body>
+
+		<div data-carousel="carousel1">
+			<div data-carousel-slides-wrapper>
+
+			</div>
+		</div>
+
+		<script type="text/javascript">
+
+            var carousel = new Carousel();
+
+
+            carousel.addSlide({
+                content : '<img alt="" src="img/veloster.jpg"/>'
+            });
+
+            console.log( carousel );
+
+		</script>
+	</body>
+</html>
